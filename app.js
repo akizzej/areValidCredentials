@@ -6,3 +6,13 @@ Ejemplo de entrada:
 
 var output = areValidCredentials('Ritu', 'mylongpassword');
 console.log(output); // --> true*/
+function areValidCredentials(name, password){
+    if(name.length >3 && password.length >=8){
+        //retorna true
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+console.log (areValidCredentials("popa","maymaymay"));// retorna true
